@@ -2,7 +2,6 @@
 
 
 class LinkedList{
-  //new LinkedList()
   constructor(value){
     this.value = value;
     this.next = null;
@@ -19,9 +18,6 @@ class LinkedList{
   }
 
   remove(node){
-    // console.log('this.next is', this.next);
-    // console.log('node is', node);
-    // console.log(this.next);
     if(!(node instanceof LinkedList))
       throw new TypeError('<node should be instance of LinkedList');
     if(!this.next)
